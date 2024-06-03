@@ -1,0 +1,7 @@
+Automated Desktop Cleaner:
+
+Will be prompted with entering your username on your computer for your directories
+Will then be prompted with what folders you want to create if you want to make any more
+Will then be asked for subdirectories
+move_files_to_directories will then run in the background until the user stops the program, cleaning the desktop every 10s with your given conditions
+
