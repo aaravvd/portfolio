@@ -1,0 +1,28 @@
+Key points:
+
+-Created a deep neural network with 4 layers(input, 2 hidden, output), using PyTorch and numpy
+-Used ReLu activation function
+-Generated training data using Forward-Time-Backwards space CFD model
+-Trained on rectangular box, the hardest initial condition to use due to steep edges(not differentiable at certain points)
+-Recommend testing on sinusoidal initial conditions like sine and cosine, or parabolic regressions 
+-Created Physics-Informed Loss function by computing the right side of the equation(gradients of both using torch.autograd)
+-PINN was 33% more accurate than standard DNN
+-PINN was 53% faster than traditional methods
+
+
+
+
+Common Problem that we use computational fluid dynamics(CFD) to solve
+Advection equation = an equation that represents an object moving in a fluid advected by some velocity
+Represented as a partial differential equation ∂u/∂x + a*∂u/∂t = 0, where t is time and x is space
+Computational Fluid Dynamics - Use forward time backward space method(check gradient at all points forward in time and backwards in space), which is very cost inefficient 
+
+To Solve this, me, Akshay Lakkur, and Michael Xiong, advised by a PHD student at UC Santa Cruz, Christopher DeGrendele worked as a team to create a very novel solution to this kind of a problem.
+
+Physics Informed Neural Networks(pinns): A typical Deep Neural Network that incorparates a physics loss function
+
+Essentially, when a computer computes the left half of the equation, ∂u/∂x + a*∂u/∂t*(using torch.autograd), it is inaccurate, so it will never truly be 0. This is known as our physics loss.
+We get physics loss by imposing some constraints on the problem(in this case, ∂u/∂x + a*∂u/∂t MUST be as close to 0 as possible, which is minimized during gradient descent).
+This extra physics loss makes the PINN 33% more accurate than a standard deep neural network, and 53% faster than using the forward time, backwards space method(CFD). 
+
+Really fun project learned a lot about both Machine Learning and fluid dynamics/math :)
