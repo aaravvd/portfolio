@@ -4,7 +4,7 @@ Key points:
 -Used ReLu activation function
 -Generated training data using Forward-Time-Backwards space CFD model
 -Trained on rectangular box, the hardest initial condition to use due to steep edges(not differentiable at certain points)
--Recommend testing on sinusoidal initial conditions like sine and cosine, or parabolic regressions 
+-Recommend running on sinusoidal initial conditions like sine and cosine, or parabolic regressions, as that will show the true extent the model can perform to
 -Created Physics-Informed Loss function by computing the right side of the equation(gradients of both using torch.autograd)
 -PINN was 33% more accurate than standard DNN
 -PINN was 53% faster than traditional methods
