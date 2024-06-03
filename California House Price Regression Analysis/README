@@ -1,0 +1,7 @@
+README:
+
+This is a California House Price Prediction model, using linear and random forest regressors. We start by preprocessing data and doing some feature engineering, then doing a linear regression with a 67% accuracy rate. 
+I then implemented a random forest regressor, and created some parameters to tweak using hyperparameter tuning.
+I used grid-search cross validation, which created training grids and cross-validation grids, getting an 82% accuracy rate.
+
+This model is trained and tested on a dataset from Kaggle, California house prices in the 1990s. Here is the link to the dataset: https://www.kaggle.com/datasets/camnugent/california-housing-prices
