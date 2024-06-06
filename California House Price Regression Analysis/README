@@ -1,5 +1,7 @@
 README:
 
+End-to-end regression project utilizing random forest regression and data science libraries such as seaborn.
+
 This is a California House Price Prediction model, using linear and random forest regressors. We start by preprocessing data and doing some feature engineering, then doing a linear regression with a 67% accuracy rate. 
 I then implemented a random forest regressor, and created some parameters to tweak using hyperparameter tuning.
 I used grid-search cross validation, which created training grids and cross-validation grids, getting an 82% accuracy rate.
