@@ -1,3 +1,6 @@
+
+Desktop cleaner which uses shutil and os + while loop to be automated
+
 Automated Desktop Cleaner:
 
 Will be prompted with entering your username on your computer for your directories 
