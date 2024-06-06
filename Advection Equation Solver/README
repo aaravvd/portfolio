@@ -1,3 +1,6 @@
+Deep learning/Physics-Informed Neural Network Project
+
+
 Key points:
 
 -Created a deep neural network with 4 layers(input, 2 hidden, output), using PyTorch and numpy
