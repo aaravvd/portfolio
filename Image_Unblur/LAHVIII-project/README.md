@@ -1,3 +1,7 @@
+README:
+
+Creating a convoultional neural networks using tools such as pytorch and resnets to upscale an image. 
+
 This is a project created during a Hackathon, with the challenge of completing it in under 24 hours. Created with Kaiden Ashvini, Rishab Jain, and Rohit Pulle
 
 Image-Clarification App using De-Convolutional Neural Networks:
