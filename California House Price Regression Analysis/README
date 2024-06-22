@@ -7,3 +7,5 @@ I then implemented a random forest regressor, and created some parameters to twe
 I used grid-search cross validation, which created training grids and cross-validation grids, getting an 82% accuracy rate.
 
 This model is trained and tested on a dataset from Kaggle, California house prices in the 1990s. Here is the link to the dataset: https://www.kaggle.com/datasets/camnugent/california-housing-prices
+
+I made this project when we were looking for new houses as we were interested in moving, just to predict how some houses around us would be priced if put on sale! 
