@@ -1,5 +1,5 @@
-
-Desktop cleaner which uses shutil and os + while loop to be automated
+I often times end up with a really messy desktop :) 
+So I made a desktop cleaner which uses shutil and os + while loop to be automated
 
 Automated Desktop Cleaner:
 
