@@ -18,3 +18,4 @@ Use resnets to construct scaled-up image to unblur it
 
 Here is the dataset we used to train this model: https://www.kaggle.com/datasets/atulanandjha/lfwpeople
 
+One day, we accidentally left the garage open at night and my bike got stolen. Now we do have cameras in our garage, but the footage was blurry and we couldn't see the face of who did it. This inspired me during the hackathon to make an image-unblurring app so that if we ever run into this problem again, we're prepared.
